@@ -1,3 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family: "Hind";
+  scroll-behavior: smooth;
+
+}
+
+
+@layer components {
+  li {
+    @apply transition-all ease-in;
+    
+  }
+  body {
+
+    @apply transition-all ease-in;
+
+    @apply dark:bg-dark bg-gradient-to-br h-screen bg-fixed   from-dark/5 dark:from-dark dark:to-black/90 to-white  overflow-y-scroll scrollbar-hide;
+  }
+  hr {
+    @apply dark:border-white/10;
+  }
+}
