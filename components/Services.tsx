@@ -32,7 +32,7 @@ const Services = () => {
 
 
   return (
-    <div className='h-screen space-y-20'>
+    <div className='h-[95vh] space-y-28'>
         <h1 className='font-medium text-xl mt-'>Services.</h1>
         <motion.div ref={ref}  variants={varients}  initial='hidden' transition={transition} animate={controls} className=''>
           <ul>
@@ -65,7 +65,7 @@ const Services = () => {
             </li>
           </ul>
         </motion.div>
-        <hr className='mt-10 w-3/6 mx-auto'/>
+        <hr className=' w-3/6 mx-auto' id='about_sec'/>
     </div>
   )
 }

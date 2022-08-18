@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 
 
 const Cursor = () => {
+    const [isHover, setIsHover] = useState<boolean>(false);
     const cursorX = useMotionValue(-100);
     const cursorY = useMotionValue(-100);
 
@@ -25,7 +26,7 @@ const Cursor = () => {
     }, []);
     return (
         <motion.div
-            className="cursor z-[51] pointer-events-none fixed rounded-full bg-white mix-blend-difference w-16 h-16"
+            className="cursor z-[51] pointer-events-none fixed rounded-full bg-white mix-blend-difference w-10 h-10"
             style={{
                 translateX: cursorXSpring,
                 translateY: cursorYSpring,

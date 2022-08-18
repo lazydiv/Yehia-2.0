@@ -50,7 +50,7 @@ function Header() {
         <h1 className='py-3  font-medium z-1  md:mx-0 mx-3'><Link href="/">Yehia.</Link></h1>
         <motion.ul variants={variants} initial='hidden' transition={transition} animate='enter' exit='exit' className='items-center hidden md:flex'>
           <li className='p-3 after:w-full after:h-[2px] after:scale-x-0 dark:after:bg-white after:hover:scale-x-100 after:transition-all after:opacity-80 after:cursor-pointer  after:origin-left  after:hidden md:after:block after:bg-dark'><Link href='#services'>Services</Link></li>
-          <li className='p-3 after:w-full after:h-[2px] after:scale-x-0 dark:after:bg-white after:hover:scale-x-100 after:transition-all after:opacity-80 after:cursor-pointer  after:origin-left   after:hidden md:after:block after:bg-dark'><Link href='#about'>About</Link></li>
+          <li className='p-3 after:w-full after:h-[2px] after:scale-x-0 dark:after:bg-white after:hover:scale-x-100 after:transition-all after:opacity-80 after:cursor-pointer  after:origin-left   after:hidden md:after:block after:bg-dark'><Link href='#about_sec'>About</Link></li>
           <li className='p-3 after:w-full after:h-[2px] after:scale-x-0 dark:after:bg-white after:hover:scale-x-100 after:transition-all after:opacity-80 after:cursor-pointer  after:origin-left   after:hidden md:after:block after:bg-dark'><Link href='#contact'>Contact</Link></li>
           <li className='hover:bg-slate-100 hover:dark:bg-white/5 group hover:rounded-lg hover:cursor-pointer'>
             <button onClick={handleThemeChange} className='flex p-3'>
