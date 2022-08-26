@@ -44,16 +44,16 @@ function Header() {
   
   return (
     // bg-white dark:bg-dark 
-    <div className={`w-full ${isSticky ? 'fixed mt-0' : 'absolute mt-10'}   flex-col z-50  items-center flex    text-md`}>
+    <div className={`w-full ${isSticky ? 'fixed mt-0' : 'absolute mt-10'} bg-clip-text md:text-transparent   md:bg-white md:mix-blend-difference  flex-col z-[50]  items-center flex    text-md`}>
       <div className='md:w-5/6 w-full inline-flex justify-between '>
 
-        <h1 className='py-3  font-medium z-1  md:mx-0 mx-3'><Link href="/">Yehia.</Link></h1>
+        <h1 className='py-3   font-medium md:mx-0 mx-3'><Link href="/">Yehia.</Link></h1>
         <motion.ul variants={variants} initial='hidden' transition={transition} animate='enter' exit='exit' className='items-center hidden md:flex'>
-          <li className='p-3 after:w-full after:h-[2px] after:scale-x-0 dark:after:bg-white after:hover:scale-x-100 after:transition-all after:opacity-80 after:cursor-pointer  after:origin-left  after:hidden md:after:block after:bg-dark'><Link href='#services'>Services</Link></li>
-          <li className='p-3 after:w-full after:h-[2px] after:scale-x-0 dark:after:bg-white after:hover:scale-x-100 after:transition-all after:opacity-80 after:cursor-pointer  after:origin-left   after:hidden md:after:block after:bg-dark'><Link href='#about_sec'>About</Link></li>
-          <li className='p-3 after:w-full after:h-[2px] after:scale-x-0 dark:after:bg-white after:hover:scale-x-100 after:transition-all after:opacity-80 after:cursor-pointer  after:origin-left   after:hidden md:after:block after:bg-dark'><Link href='#contact'>Contact</Link></li>
-          <li className='hover:bg-slate-100 hover:dark:bg-white/5 group hover:rounded-lg hover:cursor-pointer'>
-            <button onClick={handleThemeChange} className='flex p-3'>
+          <li className='p-3 after:w-full after:h-[2px] after:scale-x-0 dark:after:bg-white  after:hover:scale-x-100 after:transition-all after:opacity-80 after:cursor-pointer  after:origin-left  after:hidden md:after:block after:bg-white '><Link href='#services'>Services</Link></li>
+          <li className='p-3 after:w-full after:h-[2px] after:scale-x-0 dark:after:bg-white after:hover:scale-x-100 after:transition-all after:opacity-80 after:cursor-pointer  after:origin-left   after:hidden md:after:block after:bg-white'><Link href='#about'>About</Link></li>
+          <li className='p-3 after:w-full after:h-[2px] after:scale-x-0 dark:after:bg-white after:hover:scale-x-100 after:transition-all after:opacity-80 after:cursor-pointer  after:origin-left   after:hidden md:after:block after:bg-white'><Link href='mailto:yhiazedan555@gmail.com'>Contact</Link></li>
+          <li className='hover:bg-slate-100 hover:dark:bg-white/5 group md:text-white md:hover:text-black dark:hover:text-white hover:rounded-lg hover:cursor-pointer'>
+            <button onClick={handleThemeChange} className='flex  p-3'>
               {
                 theme === 'light' ? (
                   <MoonIcon className='w-3 items-center' />

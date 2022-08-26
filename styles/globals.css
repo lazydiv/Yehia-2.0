@@ -6,21 +6,26 @@
 * {
   font-family: "Hind";
   scroll-behavior: smooth;
-  cursor: none;
-
 }
+/* .yehia {
+  mix-blend-mode: difference;
 
+  
+} */
 
 @layer components {
   li {
     @apply transition-all ease-in;
     
   }
+  * {
+    @apply md:cursor-none cursor-default
+  }
   body {
 
     @apply transition-all ease-in;
 
-    @apply dark:bg-dark bg-gradient-to-br h-screen bg-fixed   from-dark/5 dark:from-dark dark:to-black/90 to-white  overflow-y-scroll scrollbar-hide;
+    @apply dark:bg-dark bg-gradient-to-br h-screen bg-fixed   from-neutral-200 dark:from-dark dark:to-black/90 to-white  overflow-y-scroll scrollbar-hide;
   }
   hr {
     @apply dark:border-white/10;

@@ -49,13 +49,13 @@ const Home: NextPage = () => {
         <motion.span variants={variants} initial='hidden' transition={{transition, delay: 0.4}} animate='enter' exit='exit'>based in Cairo, Egypt. </motion.span>
       </motion.main>
       <ul className='flex mb-24 w-3/6 lg:w-2/6 mt-5 cursor-pointer justify-between'>
-        <li className='hover:bg-slate-100 hover:dark:bg-white/5 rounded-lg p-2'>Github</li>
-        <li className='hover:bg-slate-100 hover:dark:bg-white/5 rounded-lg p-2'>LinkedIn</li>
-        <li className='hover:bg-slate-100 hover:dark:bg-white/5 rounded-lg p-2'>Twitter</li>
-        <li className='hover:bg-slate-100 hover:dark:bg-white/5 rounded-lg p-2'>Email</li>
-        <li className='hover:bg-slate-100 hover:dark:bg-white/5 rounded-lg p-2'>Instagram</li>
+        <li className='hover:bg-slate-100 hover:dark:bg-white/5 rounded-lg p-2'><a href="https://github.com/lazydiv">Github</a></li>
+        <li className='hover:bg-slate-100 hover:dark:bg-white/5 rounded-lg p-2'><a href="https://www.linkedin.com/in/yehia-khalid-ab63b4181/">LinkedIn</a></li>
+        <li className='hover:bg-slate-100 hover:dark:bg-white/5 rounded-lg p-2'><a href="https://twitter.com/home">Twitter</a></li>
+        <li className='hover:bg-slate-100 hover:dark:bg-white/5 rounded-lg p-2'><a href="mailto:yhiazedan555@gmail.com">Email</a></li>
+        <li className='hover:bg-slate-100 hover:dark:bg-white/5 rounded-lg p-2'><a href="https://www.instagram.com/yahia_khalid_/"></a>Instagram</li>
       </ul>
-      <hr  id='services'  className='mt-10 w-3/6 mx-auto' />
+      <hr className='mt-10 w-3/6 mx-auto' />
       </div>
       <Work />
       <About />

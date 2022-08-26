@@ -46,9 +46,10 @@ const About = () => {
 
 
   return (
-    <div id='about' className='h-screen space-y-24  w-full flex flex-col'>
-      <h1 className='text-xl '>About.</h1>
-      <motion.main variants={variants2} ref={ref} initial='hidden' animate={controls} transition={transition2} className='lg:text-6xl text-5xl md:text-5xl '>
+    <div id='about' className='h-screen  w-full justify-around flex flex-col'>
+      <div className=''>
+      <h1 className='text-xl h-20'>About.</h1>
+      <motion.main variants={variants2} ref={ref} initial='hidden' animate={controls} transition={transition2} className='lg:text-6xl text-3xl md:text-5xl '>
         <motion.span variants={variants} initial='hidden' transition={{ transition, delay: 0.1 }} animate={controls} className=''>Young but not dump developer who works from home.<br /></motion.span>
         <motion.span variants={variants} initial='hidden' transition={{ transition, delay: 0.2 }} animate={controls} className=''>started coding when i was in mid school with the passion<br /> </motion.span>
         <motion.span variants={variants} initial='hidden' transition={{ transition, delay: 0.3 }} animate={controls} className=''>build more powerful apps and develope my coding skills<br /></motion.span>
@@ -56,7 +57,8 @@ const About = () => {
         <motion.span variants={variants} initial='hidden' transition={{ transition, delay: 0.5 }} animate={controls} className=''>as a graphic designer, then i decided to retire from work and<br /></motion.span>
         <motion.span variants={variants} initial='hidden' transition={{ transition, delay: 0.6 }} animate={controls} className=''>work form home and to chase my passion towards coding<br /></motion.span>
       </motion.main>
-      <hr className='mt-10 w-3/6 mx-auto' />
+      <hr className='w-3/6 mt-20 md:mt-10 mx-auto' />
+      </div>
     </div>
   )
 }

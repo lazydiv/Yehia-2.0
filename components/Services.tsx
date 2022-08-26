@@ -32,8 +32,10 @@ const Services = () => {
 
 
   return (
-    <div className='h-[95vh] space-y-28'>
-        <h1 className='font-medium text-xl mt-'>Services.</h1>
+    <div id='services' className='h-screen flex flex-col justify-around'>
+      <div  className=''>
+
+        <h1 className='font-medium text-xl '>Services.</h1>
         <motion.div ref={ref}  variants={varients}  initial='hidden' transition={transition} animate={controls} className=''>
           <ul>
             <li className='py-2 hover:bg-slate-100 hover:dark:bg-white/5 dar my-5 hover:scale-105 cursor-pointer rounded-lg'>
@@ -65,8 +67,9 @@ const Services = () => {
             </li>
           </ul>
         </motion.div>
-        <hr className=' w-3/6 mx-auto' id='about_sec'/>
+        <hr className='w-3/6 mt-5 md:mt-10 mx-auto' />
     </div>
+      </div>
   )
 }
 

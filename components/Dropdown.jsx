@@ -3,6 +3,7 @@ import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { MoonIcon, SunIcon, MenuAlt3Icon } from '@heroicons/react/solid'
 import {useTheme} from 'next-themes'
+import Link from 'next/link'
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -14,7 +15,7 @@ export default function Dropdown() {
     setTheme(theme === 'dark' ? 'light' : 'dark');
   }
   return (
-    <Menu as="div" className="relative inline-block text-left">
+    <Menu as="div" className="relative  inline-block text-left">
       <div>
         <Menu.Button className="">
           <MenuAlt3Icon className='w-5 '/>
@@ -61,7 +62,7 @@ export default function Dropdown() {
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#contact"
+                  href="mailto:yhiazedan555@gmail.com"
                   className={classNames(
                     active ? 'bg-gray-100 dark:bg-black/5' : 'dark:text-white/50',
                     'block px-4 py-2 text-sm'
